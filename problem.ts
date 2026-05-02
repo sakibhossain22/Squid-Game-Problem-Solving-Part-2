@@ -56,3 +56,15 @@ function checkPalindrome(text: string) {
     return text.split("").reverse().join("") === text
 }
 // console.log(checkPalindrome("level"))
+function sumOfArray(numbers: number[]) {
+    const sumUsingReduce = numbers.reduce((prev, curr) => prev + curr, 0)
+
+    let total = 0
+
+    for (const number of numbers) {
+       total =  number + total 
+    }
+    return total
+}
+
+// console.log(sumOfArray([20, 40, 10, 50, 100]))
