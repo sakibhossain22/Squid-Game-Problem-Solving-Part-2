@@ -11,4 +11,31 @@ function titleCase(sentence: string) {
 
     return changeCase.join(" ")
 }
-console.log(titleCase("my name is shakib"))
+// console.log(titleCase("my name is shakib"))
+
+function findMissingNumber(numbers: number[]) {
+    const sum = numbers.reduce((acc, cur) => acc + cur, 0)
+    return sum
+}
+
+// console.log(findMissingNumber([1, 2, 4, 5]))
+function reverseString(text: string) {
+    return text.split("").reverse().join("")
+}
+// console.log(reverseString("level"))
+
+function fizzBuzz(nums: number) {
+    for (let i = 0; i <= nums; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+           console.log("FIZZBUZZ")
+        } else if (i % 3 === 0) {
+           console.log("FIZZ")
+        } else if (i % 5 === 0) {
+           console.log("BUZZ")
+        } else {
+          console.log(i)
+        }
+    }
+}
+
+fizzBuzz(9)
