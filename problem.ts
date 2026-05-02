@@ -27,15 +27,28 @@ function reverseString(text: string) {
 function fizzBuzz(nums: number) {
     for (let i = 0; i <= nums; i++) {
         if (i % 3 === 0 && i % 5 === 0) {
-           console.log("FIZZBUZZ")
+            console.log("FIZZBUZZ")
         } else if (i % 3 === 0) {
-           console.log("FIZZ")
+            console.log("FIZZ")
         } else if (i % 5 === 0) {
-           console.log("BUZZ")
+            console.log("BUZZ")
         } else {
-          console.log(i)
+            console.log(i)
         }
     }
 }
 
-fizzBuzz(9)
+// fizzBuzz(9)
+
+// find largest number
+
+function findLargestNumber(numbers: number[]) {
+    let largeNumber = 0
+    for (const number of numbers) {
+        if (number > largeNumber) {
+            largeNumber = number
+        }
+    }
+    return largeNumber
+}
+// console.log(findLargestNumber([20,40,10,22,15,50,100,1]))
