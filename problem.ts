@@ -52,3 +52,7 @@ function findLargestNumber(numbers: number[]) {
     return largeNumber
 }
 // console.log(findLargestNumber([20,40,10,22,15,50,100,1]))
+function checkPalindrome(text: string) {
+    return text.split("").reverse().join("") === text
+}
+// console.log(checkPalindrome("level"))
